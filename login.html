@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      /* background-color: #1e88e5; */
+      background-image: url('https://getwallpapers.com/wallpaper/full/4/2/8/754082-new-music-wallpapers-1920x1080.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    h1 {
+      color: darkgreen;
+      margin-left: -210px;
+      font-size: 32px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+    form {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid yellow;
+      max-width: 400px;
+      margin-left: -210px;
+      padding: 80px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    input[type="email"],
+    input[type="password"] {
+      color: green;
+      width: 87%;
+      padding: 25px;
+      margin: 10px 0;
+      border: 2px solid yellowgreen;
+      border-radius: 5px;
+      outline: none;
+    }
+    input[type="email"]:hover,
+    input[type="password"]:hover,
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+      background:linear-gradient(lightblue,lightgreen);
+    }
+    button {
+      width: 100%;
+      padding: 30px;
+      margin-top: 6px;
+      background: linear-gradient(45deg, #FF6B6B, #FFA07A);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: linear-gradient(45deg, #FFA07A, #FF6B6B);
+    }
+    button:focus {
+      background: linear-gradient(45deg, #FF6B6B, #FFA07A);
+    }
+  </style>
+</head>
+<body>
+  <h1>Login</h1>
+  <form action="/login" method="POST">
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+</body>
+</html>
